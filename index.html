@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="vitae" content="width=device-width,initial-scale=1.0">
+   <title>Yan the Programmer::Home</title>
+   <!-- Bootstrap Stylesheet-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head> 
+<body>
+<header>
+	 <img src="images/business-logo.webp" height="269px"
+   width="570px" alt="Yan the Programmer" class="logo">
+</header>
+<nav>
+   <div class="container">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li class="nav-link">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="resume.html">Resume</a>
+                </li>
+                 <li class="nav-link">
+                    <a href="game.html">Game</a>
+                 </li>
+                <li class="nav-link services">
+                    <a href="portfolio.html">Portfilo
+                        <span class="material-icons dropdown-icon">
+                        </span>
+                    </a>
+                    <ul class="drop-down">
+                        <div class="wow ZoomInUp" data-wow-duration="1.5s" data-wow-delay="1s">
+                      <a href="project/final.html" target="_blank" class="bnt myBtn btn-outline-secondary btn-md" style="font-size: 15px;">
+                        <li>Project></li>
+                      <div class="wow ZoomInUp" data-wow-duration="1.5s" data-wow-delay="1s">
+                     <a href="lamp/lamp.html" target="_blank" class="bnt myBtn btn-outline-secondary btn-md" style="font-size: 15px;">
+                        <li>Lamp--></li>
+                      </a>
+                    </div>
+                       <div class="wow ZoomInUp" data-wow-duration="1.5s" data-wow-delay="1s">
+                     <a href="enevlope/enevlope.html" target="_blank" class="bnt myBtn btn-outline-secondary btn-md" style="font-size: 15px;">
+                        <li>Enevlope</li>
+                      </a>
+                    </div>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+ </nav>
+<div id="home-hero">
+   <h1>Welcome to my portfolio</h1>
+</div>
+<main>
+   <h1>About Me</h1>
+   <img src="images/img1.jpg" height="100" width="230" alt="photo of Yan Naing" class="home-photo">
+      <div class="text"></div>
+      <h7><b>I have taken these following classes</b></h7>
+         <ul>
+            <li><b>Web Fundamentals:</b><br> Where I learned HTML and CSS</li><br>
+            <li><b>Client Side 1 & 2:</b><br>JavaScript, Advanced JavaScript, JQery and Vanilla JavaScript</li><br>
+            <li><b>Machine Architecture and Organization:</b><br>Computer organization, machine language, and the use of assembly language programming using the Motorola 680x0 or DEC alpha instruction set.</li><br>
+            <li><b>Problem Solving with Programming:</b><br>Structure, design, and implementation of object-oriented computer programs.</li><br>
+            <li><b>Database Management Fundamentals:</b><br>MySQL-Information models and systems; database query languages; object-oriented and relational database design; transaction processing; distributed databases; data modeling; normalization; and physical database design.</li><br>
+            <li><b>Java Programming 2:</b><br>Object-oriented analysis and design and Java to create a distributed, multi-tier application.</li><br>
+            <li><b>Server Side Programming:</b><br> Programming in PHP to interact with SQL databases.</li>
+         </ul>
+         <h4><span></span></h4>
+         <h5 class="typing-text"><span></span></h5>
+</main>
+<footer>
+   <div class="container-fluid">
+   <div class="row">
+   <div class="col-sm-6">
+      <h4>Portfolio Website for Web Development</h4>
+      <blockquote>Sample portfolio website
+   <a href="https://saintpaul.edu">Saint Paul College</a>. Images for the website are from <a href="https://pixabay.com/">Pixabay.com</a>, icon are from <a href="https://fontawesome.com">FontAwesome.com</a></blockquote>
+   </div>
+   <div class="col-sm-6">
+     <ul class="wrapper">
+        <li class="icon envelope">
+          <span class="tooltip">Email</span>
+          <span><i class="fa fa-envelope"></i></span>
+        </li>
+        <li class="icon linkedin">
+          <span class="tooltip">Linkedin</span>
+          <a href="https://www.linkedin.com/in/yannaing700">
+          <span><i class="fab fa-linkedin"></i></span>
+        </li>
+        <li class="icon github">
+          <span class="tooltip">Github</span>
+           <a href="https://github.com/Sunnybae8">
+          <span><i class="fab fa-github"></i></span>
+        </li>
+        
+      </ul>
+   </div>
+</div>
+</div>
+</footer>
+<small><p>@Copyright</p></small>  
+<script>
+    const div = document.querySelector(".text");
+    const text = "My name is Yan Naing, I am studying Computer Programing at Saint Paul College.";
+    function textTypingEffect(element, text, i=0){
+        if (i === 0){
+            element.textContent = "";
+            element.textContent = ""; 
+            element.style.fontWeight = "bold"; 
+            element.style.fontFamily ="Impact, sans-serif";        
+            element.style.color = "rgb(200, 50, 100)";
+            element.style.fontSize = "3rem";
+        }
+        element.textContent += text[i];
+        if (i===text.length-1){
+            return;
+        }
+        setTimeout(()=> textTypingEffect(element, text, i + 1), 50);
+    }
+    textTypingEffect(div, text);
+</script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
